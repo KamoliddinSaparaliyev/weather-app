@@ -47,7 +47,6 @@
     }
   }
   .wrapper-info {
-    
     padding: 30px;
     width: 410px;
     height: 450px;
@@ -57,7 +56,7 @@
     .inner-box {
       .inner-item {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         h5 {
           font-size: 20px;
@@ -73,6 +72,7 @@
     .day-info {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       justify-content: space-around;
       margin-top: 30px;
       gap: 1px;
@@ -106,7 +106,6 @@ form {
   input {
     padding: 5px;
     width: 40%;
-    
     font-family: "Montserrat regular";
     font-size: 17px;
     color: #fff;
@@ -129,6 +128,35 @@ form {
     cursor: pointer;
     img {
       margin-bottom: 2px;
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .wrapper {
+    gap: 10px;
+    margin-bottom: 50px;
+    .wrapper-info {
+      height: 100%;
+      max-width: 380px;
+      margin-bottom: 30px;
+      border-radius: 30px;
+      .inner-item {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .day-info {
+        justify-content: center;
+        gap: 1px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  form {
+    justify-content: center;
+    input {
+      width: 80%;
     }
   }
 }
