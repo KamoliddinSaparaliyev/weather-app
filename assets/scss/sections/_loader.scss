@@ -1,0 +1,26 @@
+.loader-box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  .loader {
+    width: 80px;
+    height: 80px;
+    border: 10px dotted #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    top: 35%;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

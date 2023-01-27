@@ -1,0 +1,27 @@
+@import "./sections/fonts";
+@import "./sections/style";
+@import "./sections/loader";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+height: 100vh;
+  color: #fff;
+  background-image: linear-gradient(to right, #434343 0%, black 100%)  
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+p{
+    font-family: "Montserrat regular";
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat bold';}
+    svg path {
+      fill: #fff;
+    }

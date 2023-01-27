@@ -1,0 +1,134 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba($color: #000, $alpha: 0.1);
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    padding: 32px;
+    .box-1 {
+      margin-top: 16px;
+      .location {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+      }
+      h4 {
+        font-size: 37px;
+        line-height: 45px;
+      }
+      .date {
+        margin: 10px 0;
+      }
+      p {
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
+    .box-2 {
+      .fa-sun {
+        font-size: 80px;
+      }
+      h3 {
+        font-size: 50px;
+        line-height: 61px;
+      }
+      h5 {
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
+  }
+  .wrapper-info {
+    
+    padding: 30px;
+    width: 410px;
+    height: 450px;
+    background: #222831;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    .inner-box {
+      .inner-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h5 {
+          font-size: 20px;
+          line-height: 34px;
+        }
+        span {
+          font-family: "Montserrat regular";
+          font-size: 20px;
+          line-height: 34px;
+        }
+      }
+    }
+    .day-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 30px;
+      gap: 1px;
+      .weather-day {
+        background: rgba($color: #fff, $alpha: 0.1);
+        padding: 10px 15px;
+        box-shadow: 1px 2px 4px #222831;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        cursor: default;
+        p {
+          font-family: "Montserrat regular";
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+        }
+        h6 {
+          font-family: "Montserrat bold";
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+form {
+  margin-top: 30px;
+  display: flex;
+  align-items: stretch;
+  justify-content: end;
+  input {
+    padding: 5px;
+    width: 40%;
+    
+    font-family: "Montserrat regular";
+    font-size: 17px;
+    color: #fff;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background: rgba($color: #fff, $alpha: 0.3);
+    border: none;
+    outline: none;
+  }
+  input::placeholder {
+    color: rgb(167, 163, 163);
+  }
+
+  button {
+    padding: 8px;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    border: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+    img {
+      margin-bottom: 2px;
+    }
+  }
+}
